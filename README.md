@@ -17,4 +17,8 @@ https://github.com/YoungHaKim7/Rust_Tutorial_Full_course
 
   - https://surrealdb.com/
 
+  - Tutorials
+
+    - https://tutorials.surrealdb.com/
+
     SurrealDB makes building and scaling realtime apps dramatically quicker and easier. Get started by installing the server, and jump into our getting started guide to learn how to insert and query data in SurrealDB in minutes.
