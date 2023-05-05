@@ -24,3 +24,6 @@ https://github.com/YoungHaKim7/Rust_Tutorial_Full_course
     - https://tutorials.surrealdb.com/
     
     - SurrealDB Complete Tutorial|Introduction To SurrealDB|Tutorial:1 https://youtu.be/VCNJ4RImwBc
+    
+    
+- SurrealDB with Tobie and Jamie Morgan_Audio https://rustacean-station.org/episode/tobie-jamie-morgan/
