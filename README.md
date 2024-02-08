@@ -27,3 +27,6 @@ https://github.com/YoungHaKim7/Rust_Tutorial_Full_course
     
     
 - SurrealDB with Tobie and Jamie Morgan_Audio https://rustacean-station.org/episode/tobie-jamie-morgan/
+
+# SQL Tutorial
+- https://gvwilson.github.io/sql-tutorial/
