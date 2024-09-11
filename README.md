@@ -30,3 +30,6 @@ https://github.com/YoungHaKim7/Rust_Tutorial_Full_course
 
 # SQL Tutorial
 - https://gvwilson.github.io/sql-tutorial/
+
+# (240908)전격 비교 💥 SQLite vs MySQL vs PostgreSQL | 노마드 코더 Nomad Coders
+- https://youtu.be/ocZid4g4UpY?si=5wyPlBBPEk3P8Z7m
