@@ -1,4 +1,4 @@
-use leptos::{component, create_signal, view, IntoView, SignalUpdate};
+use leptos::{component, create_signal, expect_context, view, IntoView, SignalUpdate};
 use leptos_meta::{provide_meta_context, Stylesheet, Title};
 use leptos_router::{Route, Router, Routes};
 
@@ -38,6 +38,9 @@ fn HomePage() -> impl IntoView {
     view! {
         <h1>"Welcome to Leptos!"</h1>
         <button on:click=on_click>"Click Me: " {count}</button>
+        <div class="bg-stone-600 text-white">
+            <h1 class="bg-black">"background test"</h1>
+        </div>
     }
 }
 
