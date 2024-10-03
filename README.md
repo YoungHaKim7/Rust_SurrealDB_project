@@ -28,6 +28,16 @@ https://github.com/YoungHaKim7/Rust_Tutorial_Full_course
     
 - SurrealDB with Tobie and Jamie Morgan_Audio https://rustacean-station.org/episode/tobie-jamie-morgan/
 
+# 성능비교한 영상
+- Benchmarking SurrealDB 2.0 vs 1.5 x SurrealKV vs RocksDB 🔴 SurrealDB v2.0 Live | Xkonti
+  - https://www.youtube.com/live/xDfnezi6zRw?si=NeX_pN-B4yNy_Ptm
+    - 엑셀로 정리해 놓음
+      -  https://www.youtube.com/live/xDfnezi6zRw?si=NeX_pN-B4yNy_Ptm
+
+
+
+<hr>
+
 # SQL Tutorial
 - https://gvwilson.github.io/sql-tutorial/
 
