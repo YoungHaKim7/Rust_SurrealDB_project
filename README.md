@@ -3,7 +3,7 @@
 - SurrealDB
 
   - SurrealDB[![crates.io](https://img.shields.io/crates/v/surrealdb.svg)](https://crates.io/crates/surrealdb)![Crates.io](https://img.shields.io/crates/l/surrealdb)![wasmtimeDownloads](https://img.shields.io/crates/d/surrealdb.svg)<a href="https://github.com/surrealdb/surrealdb"><img alt="githubicon" width="20px" src="https://user-images.githubusercontent.com/67513038/218287708-001511d7-1cce-42d3-92d2-4a61193b38f0.png" /></a>
-![surrealstar](https://img.shields.io/github/stars/surrealdb/surrealdb.rs.svg)
+![surrealstar](https://img.shields.io/github/stars/surrealdb/surrealdb.svg)
 
   - <p dir="auto"><a href="https://surrealdb.com/" rel="nofollow">Website</a> | <a href="https://surrealdb.com/docs/start" rel="nofollow">Guides</a> | <a href="https://surrealdb.com/docs" rel="nofollow">API Docs</a> | <a href="https://discord.com/invite/surrealdb" rel="nofollow">Chat</a></p>
 
