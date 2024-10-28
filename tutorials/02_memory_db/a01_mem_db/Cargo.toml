@@ -1,0 +1,9 @@
+[package]
+name = "a01_mem_db"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0.213", features = ["derive"] }
+surrealdb = { version = "2.0.4", features = ["kv-mem"] }
+tokio = { version = "1.41.0", features = ["full"] }
