@@ -1,3 +1,9 @@
+# eBooks
+- https://surrealdb.com/docs/surrealdb/embedding/rust
+
+<hr />
+
+
 # SurrealDB Tutorial
 
 - [(240718)Let's learn SurrealDB :red_circle: SurrealDB Live | Xkonti](https://www.youtube.com/live/R6XUS8aLLhQ?si=YSYZpuu7o9JLOiaE)
