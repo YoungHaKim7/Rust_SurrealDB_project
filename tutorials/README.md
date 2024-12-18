@@ -6,6 +6,7 @@
 
 <hr />
 # easy rustd의 tutorial
+
 - [SurrealDB의 꿀팁! | mithradates](https://youtube.com/playlist?list=PLfllocyHVgsRS1oQrML6uu59ZQ0s4rVDP&si=3ckEt697OVy-l0Td)
 
 # SurrealDB Tutorial
