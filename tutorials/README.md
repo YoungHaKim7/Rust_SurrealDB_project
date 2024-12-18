@@ -4,6 +4,10 @@
 <hr />
 
 
+<hr />
+# easy rustd의 tutorial
+- [SurrealDB의 꿀팁! | mithradates](https://youtube.com/playlist?list=PLfllocyHVgsRS1oQrML6uu59ZQ0s4rVDP&si=3ckEt697OVy-l0Td)
+
 # SurrealDB Tutorial
 
 - [(240718)Let's learn SurrealDB :red_circle: SurrealDB Live | Xkonti](https://www.youtube.com/live/R6XUS8aLLhQ?si=YSYZpuu7o9JLOiaE)
