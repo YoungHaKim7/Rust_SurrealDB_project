@@ -35,6 +35,16 @@
 # SQL Tutorial
 - https://gvwilson.github.io/sql-tutorial/
 
+<hr />
+
+# SQL명령어 그림으로 이해하기
+- 출처 : https://www.instagram.com/reel/DBrYJ_EhGku/?igsh=MWdwY2htemZ1b2xs
+  - fork link: https://economiceco.tistory.com/19642
+
+<img width=450px src="https://github.com/user-attachments/assets/0da8b29c-bad8-4f4e-9857-f683e336744e" />
+
+<hr />
+
 # (240908)전격 비교 💥 SQLite vs MySQL vs PostgreSQL | 노마드 코더 Nomad Coders
 - https://youtu.be/ocZid4g4UpY?si=5wyPlBBPEk3P8Z7m
 
