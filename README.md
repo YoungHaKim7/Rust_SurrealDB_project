@@ -15,11 +15,11 @@
 
     SurrealDB makes building and scaling realtime apps dramatically quicker and easier. Get started by installing the server, and jump into our getting started guide to learn how to insert and query data in SurrealDB in minutes.
     
-    ## Tutorials
-
-    - https://tutorials.surrealdb.com/
-    
-    - SurrealDB Complete Tutorial|Introduction To SurrealDB|Tutorial:1 https://youtu.be/VCNJ4RImwBc
+## Tutorials
+- easy rust에서 만든거
+  - https://surrealdb.com/learn/book
+   
+- SurrealDB Complete Tutorial|Introduction To SurrealDB|Tutorial:1 https://youtu.be/VCNJ4RImwBc
     
     
 - SurrealDB with Tobie and Jamie Morgan_Audio https://rustacean-station.org/episode/tobie-jamie-morgan/
