@@ -65,3 +65,83 @@ The database is available on the default port of 8000:
 ==> Summary
 🍺  /opt/homebrew/Cellar/surreal/2.6.0: 4 files, 114.1MB,
 ```
+
+# SurrealDB CLI Server Usage
+
+## Starting the Server
+
+```bash
+# In-memory storage (quickest for testing)
+cargo run --no-default-features --features storage-mem,http,scripting -- start \
+  --log trace \
+  --user root \
+  --pass root \
+  memory
+
+# File-based storage (SurrealKV)
+cargo run --no-default-features --features storage-kv,http,scripting -- start \
+  --log trace \
+  --user root \
+  --pass root \
+  file://path/to/database.db
+
+# With specific namespace/database pre-created
+cargo run -- start memory --user root --pass root --ns test --db test
+```
+
+## Using the CLI
+
+Once the server is running, you can use the SurrealDB CLI in several ways:
+
+### 1. **Interactive SQL Shell**
+```bash
+# Connect to running server
+cargo run -- sql --endpoint ws://localhost:8000 --user root --pass root --ns test --db test
+
+# Or use the surreal CLI directly if installed
+surreal sql --endpoint ws://localhost:8000 --user root --pass root --ns test --db test
+```
+
+### 2. **Execute a `.surql` file non-interactively**
+```bash
+# Run queries from a file
+cargo run -- sql --endpoint ws://localhost:8000 --user root --pass root --ns test --db test --query path/to/queries.surql
+
+# Or pipe content
+cat queries.surql | cargo run -- sql --endpoint ws://localhost:8000 --user root --pass root
+```
+
+### 3. **Import data from a file**
+```bash
+# Import SQL/SurrealQL file
+cargo run -- import --endpoint ws://localhost:8000 --user root --pass root --ns test --db test path/to/data.surql
+```
+
+## Example `.surql` File Format
+
+```surql
+-- Create namespace and database
+USE NS test;
+USE DB test;
+
+-- Create a table
+CREATE TABLE user SCHEMALESS;
+
+-- Insert data
+CREATE user SET name = "John", email = "john@example.com";
+
+-- Query data
+SELECT * FROM user;
+```
+
+## Quick Test Workflow
+
+```bash
+# Terminal 1: Start server
+cargo run -- start memory --user root --pass root
+
+# Terminal 2: Run queries from file
+echo "INFO FOR ROOT;" | cargo run -- sql --endpoint ws://localhost:8000 --user root --pass root
+```
+
+Would you like me to help you create a specific `.surql` file or set up a particular use case?
