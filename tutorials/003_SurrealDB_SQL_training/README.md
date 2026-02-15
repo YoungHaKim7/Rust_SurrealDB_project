@@ -62,3 +62,103 @@ test/test> INFO FOR ROOT;
 test/test>
 
 ```
+
+# 10 Basic SurrealDB Commands
+
+Based on your interaction with the SurrealDB SQL shell, here are the fundamental commands:
+
+## 1. USE NS / USE DB
+```sql
+USE NS namespace_name;
+USE DB database_name;
+```
+Select a namespace and database to work with. Required before most operations.
+
+## 2. INFO
+```sql
+INFO FOR DB;     -- Database info (tables, users, etc.)
+INFO FOR NS;     -- Namespace info
+INFO FOR TABLE table_name;  -- Table schema
+```
+
+## 3. CREATE - Insert records
+```sql
+-- Create a record with auto-generated ID
+CREATE user SET name = 'John', age = 30;
+
+-- Create with specific ID
+CREATE user:tobias SET name = 'Tobias', email = 'tobias@example.com';
+```
+
+## 4. SELECT - Query data
+```sql
+-- Select all records
+SELECT * FROM user;
+
+-- Select specific fields
+SELECT name, email FROM user;
+
+-- With conditions
+SELECT * FROM user WHERE age > 25;
+```
+
+## 5. UPDATE - Modify records
+```sql
+-- Update specific record
+UPDATE user:tobias SET email = 'newemail@example.com';
+
+-- Update with conditions
+UPDATE user SET age = 31 WHERE name = 'John';
+```
+
+## 6. DELETE - Remove records
+```sql
+-- Delete specific record
+DELETE user:tobias;
+
+-- Delete with conditions
+DELETE user WHERE age < 18;
+
+-- Delete all records in table
+DELETE user;
+```
+
+## 7. RELATE - Create relationships
+```sql
+-- Create a relationship between two records
+RELATE user:tobias->friend->user:john;
+```
+
+## 8. UPSERT - Update or insert
+```sql
+-- Updates if exists, inserts if not
+UPSERT user:tobias SET name = 'Tobias', age = 32;
+```
+
+## 9. DEFINE TABLE - Create table
+```sql
+-- Define a schemaless table
+DEFINE TABLE user SCHEMALESS;
+
+-- Define with schema
+DEFINE TABLE user SCHEMAFUL
+  PERMISSIVE;
+```
+
+## 10. DEFINE FIELD - Add field constraints
+```sql
+DEFINE FIELD name ON TABLE user TYPE string;
+DEFINE FIELD email ON TABLE user TYPE string ASSERT email@.com;
+```
+
+---
+
+**Quick workflow to verify data:**
+```sql
+CREATE user SET name = 'Alice', role = 'admin';
+SELECT * FROM user;  -- Verify it was created
+UPDATE user SET role = 'superadmin' WHERE name = 'Alice';
+SELECT * FROM user;  -- Verify update
+```
+
+For more details, see the [SurrealQL documentation](https://surrealdb.com/docs/surrealql).
