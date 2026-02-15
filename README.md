@@ -45,6 +45,15 @@
 
 <hr />
 
+# Surreal Deal Store
+
+- The database we'll build throughout this course is the Surreal Deal Store, which you might have seen in our documentation, blogs, or YouTube videos.
+  - https://surrealdb.com/learn/fundamentals
+
+<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/fed8b72d-e57d-4c7b-a3fa-c53a4e3023a8" />
+
+<hr />
+
 # (240908)전격 비교 💥 SQLite vs MySQL vs PostgreSQL | 노마드 코더 Nomad Coders
 - https://youtu.be/ocZid4g4UpY?si=5wyPlBBPEk3P8Z7m
 
@@ -53,4 +62,5 @@
 https://github.com/YoungHaKim7/Rust_Tutorial_Full_course/tree/main/17_Rust_Web_Dev_FullStack
 
 https://github.com/YoungHaKim7/Rust_Tutorial_Full_course
+
 
