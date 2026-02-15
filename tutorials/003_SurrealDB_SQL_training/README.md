@@ -176,3 +176,39 @@ For more details, see the [SurrealQL documentation](https://surrealdb.com/docs/s
   The cheat sheet covers all major SurrealDB features including its unique
   multi-model capabilities (graph, time-series, geospatial, vector search) that
   distinguish it from traditional databases like PostgreSQL.
+
+To check if your data was inserted, simply run the SELECT query in the SurrealDB SQL shell:
+
+```sql
+SELECT * FROM category;
+```
+
+This will return all records in the `category` table. Based on your CREATE statement, you should see something like:
+
+```json
+[{ id: category:1a6ipew2kdc6frm47ats, name: 'Technology', created_at: d'2026-02-15T16:03:46.656535Z' }]
+```
+
+**Other useful queries:**
+
+- Select specific fields:
+  ```sql
+  SELECT name, created_at FROM category;
+  ```
+
+- Filter by a condition:
+  ```sql
+  SELECT * FROM category WHERE name = 'Technology';
+  ```
+
+- Count records:
+  ```sql
+  SELECT count() FROM category GROUP ALL;
+  ```
+
+- Get table info:
+  ```sql
+  INFO FOR TABLE category;
+  ```
+
+Just type `SELECT * FROM category;` and press Enter in your shell where you see `test/test>`.
