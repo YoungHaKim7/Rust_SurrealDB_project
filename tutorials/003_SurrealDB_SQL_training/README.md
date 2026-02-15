@@ -162,3 +162,17 @@ SELECT * FROM user;  -- Verify update
 ```
 
 For more details, see the [SurrealQL documentation](https://surrealdb.com/docs/surrealql).
+
+
+# claude
+
+⏺ Done! I've created:
+
+  1. SURREALDB.md - A comprehensive cheat sheet formatted similarly to your
+  PostgreSQL reference
+  2. memory/MEMORY.md - Project memory with key commands and reference to the cheat
+  sheet
+
+  The cheat sheet covers all major SurrealDB features including its unique
+  multi-model capabilities (graph, time-series, geospatial, vector search) that
+  distinguish it from traditional databases like PostgreSQL.
