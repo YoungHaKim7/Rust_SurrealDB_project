@@ -18,6 +18,9 @@
 ## Tutorials
 - easy rust에서 만든거
   - https://surrealdb.com/learn/book
+
+- surrrealDB 3.0소식
+  - https://surrealdb.com/releases
    
 - SurrealDB Complete Tutorial|Introduction To SurrealDB|Tutorial:1 https://youtu.be/VCNJ4RImwBc
     
