@@ -37,6 +37,13 @@
 # SQL Tutorial
 - https://gvwilson.github.io/sql-tutorial/
 
+# surrealDB upgrade
+- https://surrealdb.com/docs/surrealdb/cli/upgrade
+
+```bash
+surreal upgrade
+```
+
 <hr />
 
 # SQL명령어 그림으로 이해하기
