@@ -145,3 +145,39 @@ echo "INFO FOR ROOT;" | cargo run -- sql --endpoint ws://localhost:8000 --user r
 ```
 
 Would you like me to help you create a specific `.surql` file or set up a particular use case?
+
+# AI(`surreal sql`)
+
+The error indicates you need to authenticate first. SurrealDB 2.x has IAM (Identity and Access Management) enabled by default.
+
+**To fix this, authenticate first:**
+
+```sql
+# Either authenticate as root
+> DEFINE USER root ON ROOT PASSWORD 'your-root-password';
+
+# Or if you already have a user set up, authenticate
+> USE NS test DB test;
+> SIGN IN WITH root, 'your-root-password';
+```
+
+**For local testing without auth, you can start SurrealDB with:**
+
+```bash
+surreal start --user root --pass root memory
+```
+
+Then in the SQL shell:
+
+```sql
+> USE NS test DB test;
+> CREATE category SET name = 'Technology', created_at = time::now();
+```
+
+**Or connect directly with credentials:**
+
+```bash
+surreal sql --endpoint ws://localhost:8000 --namespace test --database test --user root --pass root
+```
+
+Would you like help setting up authentication or testing without permissions?
