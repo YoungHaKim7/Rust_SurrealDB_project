@@ -1,0 +1,9 @@
+[package]
+name = "a02_suureal_db_connect"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+surrealdb = { version = "2.6.1", features = ["kv-mem"] }
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"] }

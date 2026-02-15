@@ -1,0 +1,13 @@
+[package]
+name = "a01_quick_tutorial"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fake = "4.4.0"
+rand = "0.10.0"
+surrealdb-types = "0.8.2"
+surrealism = "0.1.8"
+
+[lib]
+crate-type = [ "cdylib" ]

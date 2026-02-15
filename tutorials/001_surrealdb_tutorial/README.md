@@ -1,3 +1,5 @@
+- https://surrealdb.com/docs/sdk/rust/embedding
+
 # surreal DB start
 
 - `username`
