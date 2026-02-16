@@ -80,6 +80,83 @@ test/test>
 
 ```
 
+                               
+# ● Querying SurrealDB                                                                                          
+                                                                                                              
+  SurrealDB uses SurrealQL, a SQL-like query language. Here are the main ways to query:                       
+                                                                                                              
+- 1. Basic Query Syntax                                                                                       
+
+```                                                                                                             
+  -- Select records                                                                                           
+  SELECT * FROM person;                                                                                       
+
+  -- Select with filtering
+  SELECT * FROM person WHERE age > 18;
+
+  -- Create a record
+  CREATE person SET name = "John", age = 25;
+
+  -- Update records
+  UPDATE person SET age = 26 WHERE name = "John";
+
+  -- Delete records
+  DELETE FROM person WHERE age < 18;
+
+```
+
+- 2. Query Interfaces
+
+  HTTP/REST
+
+# Using curl
+
+```bash
+  curl -X POST http://localhost:8000/sql \
+    -u "root:root" \
+    -d "SELECT * FROM person"
+```
+  
+- WebSocket (Recommended for production)
+
+```js
+  const db = new Surreal('ws://localhost:8000/rpc');
+  await db.signin({ user: 'root', pass: 'root' });
+  await db.use('namespace', 'database');
+  const result = await db.select('person');
+```
+
+- Rust SDK
+
+```rs
+  let sql = "SELECT * FROM person WHERE age > $age";
+  let result = db.query(sql, [("age", 18)]).await?;
+```
+
+- CLI
+```bash
+surreal sql --endpoint http://localhost:8000 --namespace ns --database db
+```
+
+# Then enter queries interactively
+
+- 3. Quick Start
+
+- Run the development server:
+
+```bash
+cargo run --no-default-features --features storage-mem,http,scripting -- start --log trace --user root --pass root memory
+```
+  
+- Then query via HTTP or WebSocket at `http://localhost:8000`.
+
+- Learn More
+  - Full SurrealQL reference: https://surrealdb.com/docs/surrealql
+  - SurrealDB University: https://surrealdb.com/learn
+
+- Would you like help with a specific query type (e.g., graph queries, relationships, aggregations)?
+
+
 # 10 Basic SurrealDB Commands
 
 Based on your interaction with the SurrealDB SQL shell, here are the fundamental commands:
