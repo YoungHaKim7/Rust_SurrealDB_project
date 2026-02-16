@@ -9,6 +9,9 @@
   - https://github.com/tikv/tikv
 - https://tikv.org/
 
+- TiKV Configuration File
+  - https://docs.pingcap.com/tidb/stable/tikv-configuration-file/
+
 # Install
 
 ```bash
