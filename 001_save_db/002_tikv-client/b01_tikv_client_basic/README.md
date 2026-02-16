@@ -1,8 +1,11 @@
 # Result
 
+- tikv_client서버 구동 먼저해야함 설치부터~
+    - https://tikv.org/docs/7.1/concepts/tikv-in-5-minutes/ 
+
 ```bash
 tikv_client DB _Hello, world!
-Error: InternalError { message: "[/Users/gy-gyoung/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tikv-client-0.4.0/src/pd/cluster.rs:209]: PD cluster failed to respond" }
+[KvPair(6B31, "v1"), KvPair(6B32, "v2"), KvPair(6B33, "v3"), KvPair(6B34, "v4")]
 
 ```
 
