@@ -1,0 +1,23 @@
+[package]
+name = "a02_csv_savedb_rocksdb_surrealdb"
+version = "0.1.0"
+edition = "2024"
+
+[lints.clippy]
+# Allow deprecated File for SurrealDB native storage
+deprecated_safe = "allow"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "migrate"
+path = "src/migrate_to_native.rs"
+
+[dependencies]
+csv = "1.4.0"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+surrealdb = { version = "2.6.1", features = ["kv-rocksdb"] }
+
