@@ -54,6 +54,9 @@ surreal upgrade
 
 # Install & setting(LinuxOS)
 
+- nightly
+  - https://surrealdb.com/docs/surrealdb/installation/nightly
+
 ```bash
 SurrealDB successfully installed in:
   /home/gy/.surrealdb/surreal
