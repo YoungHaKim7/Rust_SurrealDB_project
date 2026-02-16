@@ -1,17 +1,16 @@
-- 아직 개발중인가?..  에러남.
-
 # Result
 
 ```bash
-$ cargo r --release
-
+❯ cargo r --release
+    Finished `release` profile [optimized] target(s) in 0.47s
+     Running `target/release/a01_savedb_tikv_client`
 === SurrealDB + TiKV Client Demo ===
 
 1. Connecting to SurrealDB...
-  SurrealDB error: There was an error processing a remote WS request: IO error: Connection refused (os error 61) (make sure SurrealDB is running)
+  SurrealDB error: There was an error processing a remote WS request: WebSocket protocol error: SubProtocol error: Server sent no subprotocol (make sure SurrealDB is running)
 
 2. Direct TiKV access...
-  TiKV error: [/Users/gy-gyoung/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tikv-client-0.4.0/src/pd/cluster.rs:209]: PD cluster failed to respond (make sure TiKV is running)
+✓ TiKV direct access got value: Some([109, 121, 95, 118, 97, 108, 117, 101])
 
 ```
 

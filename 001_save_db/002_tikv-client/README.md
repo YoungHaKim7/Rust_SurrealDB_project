@@ -11,31 +11,18 @@
 
 # Install
 
-
 ```bash
-$ export TIKV_VERSION=v7.5.0
-$ export GOOS=darwin  # only {darwin, linux} are supported
-$ export GOARCH=amd64 # only {amd64, arm64} are supported
-$ curl -O  https://tiup-mirrors.pingcap.com/tikv-$TIKV_VERSION-$GOOS-$GOARCH.tar.gz
-$ curl -O  https://tiup-mirrors.pingcap.com/pd-$TIKV_VERSION-$GOOS-$GOARCH.tar.gz
-$ tar -xzf tikv-$TIKV_VERSION-$GOOS-$GOARCH.tar.gz
-$ tar -xzf pd-$TIKV_VERSION-$GOOS-$GOARCH.tar.gz
-```
-
-2. Start PD instance.
-
-```bash
-$ ./pd-server --name=pd --data-dir=/tmp/pd/data --client-urls="http://127.0.0.1:2379" --peer-urls="http://127.0.0.1:2380" --initial-cluster="pd=http://127.0.0.1:2380" --log-file=/tmp/pd/log/pd.log
-```
-
-3. Start TiKV instance.
-
-```bash
-$ ./tikv-server --pd-endpoints="127.0.0.1:2379" --addr="127.0.0.1:20160" --data-dir=/tmp/tikv/data --log-file=/tmp/tikv/log/tikv.log
-```
-
-4. Install TiKV Client(Python) and verify the deployment, required Python 3.5+.
-
-```bash
-$ pip3 install -i https://test.pypi.org/simple/ tikv-client
+❯ curl --proto '=https' --tlsv1.2 -sSf https://tiup-mirrors.pingcap.com/install.sh | sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4404k  100 4404k    0     0  19.5M      0 --:--:-- --:--:-- --:--:-- 19.4M
+Successfully set mirror to https://tiup-mirrors.pingcap.com
+Detected shell: fish
+Shell profile:  /Users/gy-gyoung/.profile
+/Users/gy-gyoung/.profile has been modified to add tiup to PATH
+open a new terminal or source /Users/gy-gyoung/.profile to use it
+Installed path: /Users/gy-gyoung/.tiup/bin/tiup
+===============================================
+Have a try:     tiup playground
+===============================================
 ```
