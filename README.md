@@ -18,6 +18,8 @@
 ## Tutorials
 - easy rust에서 만든거
   - https://surrealdb.com/learn/book
+    - easy rust가 일부 기여
+      - https://github.com/surrealdb/docs.surrealdb.com
 
 - surrrealDB 3.0소식
   - https://surrealdb.com/releases
