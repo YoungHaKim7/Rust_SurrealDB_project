@@ -33,6 +33,32 @@ Have a try:     tiup playground
 ===============================================
 ```
 
+# playground
+
+```bash
+$ tiup update --self && tiup update playground
+download https://tiup-mirrors.pingcap.com/tiup-v1.16.4-darwin-arm64.tar.gz 4.43 MiB / 4.43 MiB 100.00% ? MiB/s
+Updated successfully!
+download https://tiup-mirrors.pingcap.com/playground-v1.16.4-darwin-arm64.tar.gz 7.25 download https://tiup-mirrors.pingcap.com/playground-v1.16.4-darwin-arm64.tar.gz 8.21 MiB / 8.21 MiB 100.00% 274.59 MiB/s
+Updated successfully!
+
+$ tiup -v
+1.16.4 tiup
+Go Version: go1.24.1
+Git Ref: v1.16.4
+GitHash: ea0611eb5afd6597a454901eeb5a539a1725718c
+
+$ tiup playground --mode tikv-slim
+Note: Version constraint  is resolved to v8.5.5. If you'd like to use other versions:
+
+    Use exact version:      tiup playground v7.1.0
+    Use version range:      tiup playground ^5
+    Use nightly:            tiup playground nightly
+
+PD Endpoints:   127.0.0.1:2379
+Grafana:         http://127.0.0.1:3000
+```
+
 # Save data folder
 
 - data폴더에 저장되는듯
