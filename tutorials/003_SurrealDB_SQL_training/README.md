@@ -1,5 +1,15 @@
 - https://surrealdb.com/docs/surrealql/statements/info
 
+# curl로 Test
+
+```bash
+$ curl -X POST http://localhost:8000/sql \
+        -u "root:root" \
+        -d "USE NS test01; USE DB test_db; SELECT * FROM users"
+[{"result":{"database":null,"namespace":"test01"},"status":"OK","time":"6.966436ms","type":null},{"result":{"database":"test_db","namespace":"test01"},"status":"OK","time":"170.53µs","type":null},{"result":"The table 'users' does not exist","status":"ERR","time":"1.497145ms","type":null}]**
+```
+
+
 # local server 구동할때 아이디 비번 다 설정하고 들어가야함
 
 - memory 에 저장하기 redis같은거
