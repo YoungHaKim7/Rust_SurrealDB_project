@@ -52,6 +52,25 @@
 surreal upgrade
 ```
 
+# Install & setting(LinuxOS)
+
+```bash
+SurrealDB successfully installed in:
+  /home/gy/.surrealdb/surreal
+
+To ensure that surreal is in your $PATH run:
+  PATH=/home/gy/.surrealdb:$PATH
+Or to move the binary to /usr/local/bin run:
+  sudo mv /home/gy/.surrealdb/surreal /usr/local/bin
+
+To see the command-line options run:
+  surreal help
+To start an in-memory database server run:
+  surreal start --log debug --user root --pass root memory
+For help with getting started visit:
+  https://surrealdb.com/docs
+```
+
 <hr />
 
 # SQL명령어 그림으로 이해하기
