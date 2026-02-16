@@ -13,7 +13,10 @@
 
   - https://surrealdb.com/docs/surrealdb/start
 
-    SurrealDB makes building and scaling realtime apps dramatically quicker and easier. Get started by installing the server, and jump into our getting started guide to learn how to insert and query data in SurrealDB in minutes.
+- SurrealDB makes building and scaling realtime apps dramatically quicker and easier. Get started by installing the server, and jump into our getting started guide to learn how to insert and query data in SurrealDB in minutes.
+
+- web에서 sql연습 가능 rust playground같은거
+  - https://app.surrealdb.com/overview
     
 ## Tutorials
 - easy rust에서 만든거
