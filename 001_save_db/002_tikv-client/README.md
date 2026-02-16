@@ -1,5 +1,5 @@
 # tikv-client
-- 260216개발중인가 겁나게 에러난다.
+- 260216(tikv서버를 먼저 돌려줘야 에러가 나지 않는다.(`tiup` playground꼭 실행 시키기)
 - https://github.com/surrealdb/tikv-client/blob/master/README.md
 - https://tikv.org/docs/7.1/develop/clients/rust/
 
