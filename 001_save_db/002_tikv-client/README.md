@@ -3,6 +3,9 @@
 - https://github.com/surrealdb/tikv-client/blob/master/README.md
 - https://tikv.org/docs/7.1/develop/clients/rust/
 
+- doc(ebook)
+ - https://tikv.github.io/deep-dive-tikv/overview/introduction.html
+
 # tikv(github)
 
 - Distributed transactional key-value database, originally created to complement TiDB
