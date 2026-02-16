@@ -19,6 +19,9 @@ $ curl -X POST http://localhost:8000/sql \
 - memory 에 저장하기 redis같은거
   - `surreal start --user root --pass root memory`
 
+- pretty해야 보기 편하다 ㅠㅠ
+ `surreal sql --user root --pass root --pretty`
+
 ```bash
 $ surreal start --user root --pass 1
 
