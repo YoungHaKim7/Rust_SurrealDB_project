@@ -2,6 +2,9 @@
 
 # local server 구동할때 아이디 비번 다 설정하고 들어가야함
 
+- memory 에 저장하기 redis같은거
+  - `surreal start --user root --pass root memory`
+
 ```bash
 $ surreal start --user root --pass 1
 
