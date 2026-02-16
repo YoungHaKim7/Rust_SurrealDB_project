@@ -3,6 +3,11 @@
 
 <hr />
 
+- cli(sql기초)
+  - https://surrealdb.com/docs/surrealdb/cli#getting-started
+
+- go로 만든 cli(이걸 러스트로 만들어야함 ㅠㅠ)
+  - https://github.com/farinap5/SurrealCLI
 
 <hr />
 
