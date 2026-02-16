@@ -32,6 +32,11 @@
     
 - SurrealDB with Tobie and Jamie Morgan_Audio https://rustacean-station.org/episode/tobie-jamie-morgan/
 
+# 저장되는 폴더
+
+- [Where is the database stored in surrealDB?](https://stackoverflow.com/questions/73869506/where-is-the-database-stored-in-surrealdb)
+   
+
 # 성능비교한 영상
 - Benchmarking SurrealDB 2.0 vs 1.5 x SurrealKV vs RocksDB 🔴 SurrealDB v2.0 Live | Xkonti
   - https://www.youtube.com/live/xDfnezi6zRw?si=NeX_pN-B4yNy_Ptm
