@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://surrealdb.com/"><img align="space-around" alt="rustsurrealdb" width="26px" src="https://user-images.githubusercontent.com/67513038/226838520-87c704be-e1a6-4a3b-8d86-6300e3903282.png" /></a>
+  <a href="https://www.rust-lang.org/"><img align="space-around" alt="rust1" width="26px" src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" /></a>  
+</p>
+
 # Rust_SurrealDB_project
 
 - SurrealDB
