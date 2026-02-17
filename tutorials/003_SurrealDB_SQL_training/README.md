@@ -35,7 +35,7 @@ Y88b  d88P Y88b 888 888     888     Y8b.     888  888 888 888  .d88P 888   d88P
  'Y8888P'   'Y88888 888     888      'Y8888  'Y888888 888 8888888P'  8888888P'
 
 
-2026-02-15T15:27:56.572847Z  INFO surreal::env: Running 2.6.1 for macos on aarch64
+2026-02-15T15:27:56.572847Z  INFO surrealdb_server::env: Running 3.0.0-nightly+20260215.2d16ea0 for macos on aarch644
 2026-02-15T15:27:56.572998Z  INFO surrealdb::core::kvs::ds: Starting kvs store in memory
 2026-02-15T15:27:56.573061Z  INFO surrealdb::core::kvs::ds: Started kvs store in memory
 2026-02-15T15:27:56.574485Z  INFO surreal::dbs: Initialising credentials user=root
