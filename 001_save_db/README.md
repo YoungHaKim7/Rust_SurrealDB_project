@@ -12,5 +12,12 @@
 surreal start --user root --pass root surrealkv://mydb
 ```
 
+## export(저장된 파일을 뽑아내고 싶다면 id , pw 입력해 주면됨.
+
+```bash
+$ surreal export --user root --password root --namespace test_name --database test_db export.surql
+2026-02-17T06:53:31.775350Z  INFO surrealdb_server::cli::export: The SurrealQL file was exported successfully
+```
+
 # A low-level, versioned, embedded, ACID-compliant, key-value database for Rust 
 - https://github.com/surrealdb/surrealkv
