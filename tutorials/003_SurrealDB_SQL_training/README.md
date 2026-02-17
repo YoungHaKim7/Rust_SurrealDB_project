@@ -54,12 +54,12 @@ $ surreal sql --user root --pass 1
 #
 #  How to use this shell:
 #    - Different statements within a query should be separated by a (;) semicolon.
-#    - To create a multi-line query, end your lines with a (\) backslash, and press
+#    - To create a multi-line query, end your lines with a (\) backslash, and press enter.
 #    - To exit, send a SIGTERM or press CTRL+C
 #
 #  Consult https://surrealdb.com/docs/cli/sql for further instructions
 #
-#  SurrealDB version: 2.6.1
+#  SurrealDB version: 3.0.0-nightly+20260215.2d16ea0
 #
 
 > DEFINE USER root ON ROOT PASSWORD '1';
