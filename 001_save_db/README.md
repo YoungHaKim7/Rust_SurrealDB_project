@@ -11,3 +11,6 @@
 ```bash
 surreal start --user root --pass root surrealkv://mydb
 ```
+
+# A low-level, versioned, embedded, ACID-compliant, key-value database for Rust 
+- https://github.com/surrealdb/surrealkv
