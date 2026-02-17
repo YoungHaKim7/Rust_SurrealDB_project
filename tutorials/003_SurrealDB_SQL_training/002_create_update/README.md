@@ -1,5 +1,11 @@
 - https://surrealdb.com/learn/book/chapter-03
 
+# SQL start할떄 pretty해야 보기 좋다.
+
+```bash
+surreal sql --user root --pass root --pretty
+```
+
 # SurrealDB자체 저장하기
 - https://surrealdb.com/learn/book/chapter-03
 
