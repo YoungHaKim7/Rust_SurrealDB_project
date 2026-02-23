@@ -1,0 +1,12 @@
+[package]
+name = "a01_surrealdb_kv_training"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+surrealdb = { version = "3.0.0", features = ["kv-surrealkv"] }
+tokio = { version = "1.49.0", features = ["full"] }
+
+[lib]
+crate-type = [ "cdylib" ]
