@@ -42,6 +42,7 @@
 - SurrealDB with Tobie and Jamie Morgan_Audio https://rustacean-station.org/episode/tobie-jamie-morgan/
 
 - 각종 최신 정보 & 되는거 안되는거 다른 언어 지원 여부 잘 정리됨.
+  - https://lib.rs/crates/surrealdb
   - https://lib.rs/crates/surrealdb-beta
 
 # 저장되는 폴더
