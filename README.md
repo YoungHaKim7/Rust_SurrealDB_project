@@ -16,7 +16,9 @@
 
   - https://surrealdb.com/
 
-  - https://surrealdb.com/docs/surrealdb
+  - Documentation: https://surrealdb.com/docs/surrealdb
+  - SurrealDB University: https://surrealdb.com/learn/fundamentals
+  - Aeon's Surreal Renaissance (interative book): https://surrealdb.com/learn/book
 
 - SurrealDB makes building and scaling realtime apps dramatically quicker and easier. Get started by installing the server, and jump into our getting started guide to learn how to insert and query data in SurrealDB in minutes.
 
