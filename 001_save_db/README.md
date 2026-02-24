@@ -7,6 +7,7 @@
 
 # SurrealDB자체 저장하기
 - https://surrealdb.com/learn/book/chapter-03
+- https://github.com/surrealdb/surrealdb/tree/main/surrealdb
 
 ```bash
 surreal start --user root --pass root surrealkv://mydb
