@@ -32,7 +32,7 @@
     - easy rust가 일부 기여
       - https://github.com/surrealdb/docs.surrealdb.com
 
-- surrrealDB 3.0소식(Release v3.0.0-beta-4 | Released on Feb 10, 2026)
+- surrrealDB 3.0소식(Release v3.0.0 | Released on Feb 17, 2026)
   - https://surrealdb.com/releases
    
 - SurrealDB Complete Tutorial|Introduction To SurrealDB|Tutorial:1 https://youtu.be/VCNJ4RImwBc
