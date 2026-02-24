@@ -6,7 +6,7 @@
   - https://surrealdb.com/docs/sdk/rust
 
 ```bash
-surreal start --user root --pass root memory
+surreal start --user root --pass root
 ```
 
 ## export(저장된 파일을 뽑아내고 싶다면 id , pw 입력해 주면됨.
