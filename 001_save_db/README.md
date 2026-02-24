@@ -9,6 +9,9 @@
 - https://surrealdb.com/learn/book/chapter-03
 - https://github.com/surrealdb/surrealdb/tree/main/surrealdb
 
+- SDK
+  - https://surrealdb.com/docs/sdk/rust
+
 ```bash
 surreal start --user root --pass root surrealkv://mydb
 ```
