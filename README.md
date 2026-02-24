@@ -22,6 +22,9 @@
 
 - web에서 sql연습 가능 rust playground같은거
   - https://app.surrealdb.com/overview
+
+- Github-action
+  - https://surrealdb.com/docs/tutorials/using-github-actions
     
 ## Tutorials
 - easy rust에서 만든거
