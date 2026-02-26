@@ -17,8 +17,9 @@ async fn main() -> surrealdb::Result<()> {
     // Select a specific namespace / database
     db.use_ns("test").use_db("test").await?;
 
-    let input_sql_data = "./assets/input_sql_file/input_db_data.surql";
-    let some_queries = db.query(include_str!(&input_sql_data)).await?;
+    let sql_content = std::fs::read_to_string("./assets/input_sql_file/input_db_data.surql")
+        .expect("input SQL file, error");
+    let some_queries = db.query(sql_content).await?;
     dbg!(some_queries);
     Ok(())
 }
