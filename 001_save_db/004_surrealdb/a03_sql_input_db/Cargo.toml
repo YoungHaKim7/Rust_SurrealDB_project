@@ -1,0 +1,16 @@
+[package]
+name = "a03_sql_input_db"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+surrealdb = "3.0.1"
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"] }
+
+[profile.release]
+lto = true
+strip = true
+opt-level = 3
+panic = 'abort'
+codegen-units = 1
+
