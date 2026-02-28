@@ -1,10 +1,9 @@
+use surrealdb::Surreal;
 use surrealdb::engine::remote::ws::Ws;
 use surrealdb::opt::auth::Root;
-use surrealdb::Surreal;
 
 #[tokio::main]
 async fn main() -> surrealdb::Result<()> {
-
     // Connect to the server
     let db = Surreal::new::<Ws>("127.0.0.1:8000").await?;
 
@@ -18,11 +17,16 @@ async fn main() -> surrealdb::Result<()> {
     // Select a specific namespace / database
     db.use_ns("test").use_db("test").await?;
 
-    let some_queries = db.query("
+    let some_queries = db
+        .query(
+            "
+        CREATE person;
         RETURN 9; 
         RETURN 10; 
         SELECT * FROM { is: 'Nice database' };
-    ").await?;
+    ",
+        )
+        .await?;
     dbg!(some_queries);
     Ok(())
 }
