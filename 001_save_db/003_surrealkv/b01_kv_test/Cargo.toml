@@ -1,0 +1,15 @@
+[package]
+name = "b01_kv_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+surrealdb = { version = "3.0.1", features = ["kv-surrealkv"] }
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"] }
+
+[profile.release]
+lto = true
+strip = true
+opt-level = 3
+panic = 'abort'
+codegen-units = 1
