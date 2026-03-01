@@ -1,3 +1,18 @@
+# `Cargo.toml` 패턴
+
+```toml
+[dependencies]
+surrealdb = "3.0.1"
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"] }
+
+[profile.release]
+lto = true
+strip = true
+opt-level = 3
+panic = 'abort'
+codegen-units = 1
+```
+
 # SurrealDB자체 저장하기
 - https://surrealdb.com/learn/book/chapter-03
 - https://github.com/surrealdb/surrealdb/tree/main/surrealdb
