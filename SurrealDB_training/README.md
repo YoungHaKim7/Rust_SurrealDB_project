@@ -1,3 +1,6 @@
+# ebook
+- https://surrealdb.com/learn/book/chapter-03#the-as-keyword
+
 # SurealDB 공부
 
 - update vs upsert
