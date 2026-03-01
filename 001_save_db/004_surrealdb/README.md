@@ -13,6 +13,20 @@ panic = 'abort'
 codegen-units = 1
 ```
 
+
+- axum
+  - The serde crate will also need a feature flag for its Serialize and Deserialize macros. Your cargo.toml dependencies should look like this:
+- https://surrealdb.com/docs/sdk/rust/frameworks/axum
+
+```toml
+axum = "0.8.8"
+fake = "4.4.0"
+serde = { version = "1.0.228", features = ["derive"] }
+surrealdb = "3.0.0-beta.2"
+thiserror = "2.0.18"
+tokio = "1.49.0"
+```
+
 # SurrealDB자체 저장하기
 - https://surrealdb.com/learn/book/chapter-03
 - https://github.com/surrealdb/surrealdb/tree/main/surrealdb
