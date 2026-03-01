@@ -1,0 +1,33 @@
+#V2
+use db test
+use ns test
+select * from person;
+select * from town;
+SELECT\n    population,\n    "Weather for " + name AS name,\n    10.5 AS temperature,\n    "Cloudy" AS conditions\n    FROM town:the_naimo;
+select * from town;
+SELECT *,\n  "Name: " + name + ". Population: " + <string>population AS data\nFROM town:the_naimo;
+select * from town;
+CREATE town:sukh SET name = "Sukh";
+SELECT * from town:sukh;
+UPDATE town:sukh SET population = 2955;
+SELECT * from town:sukh;
+CREATE town SET name = "Sukh";
+SELECT * from town;
+UPDATE airplane SET name = "Aeon's plane";
+UPDATE airplane:aeons_plane SET name = "Aeon's plane";
+UPSERT airplane:aeons_plane SET name = "Aeon's plane";
+UPSERT airplane:aeons_plane SET seats = 20;
+UPDATE airplane SET name = "Aeon's plane";
+UPSERT airplane SET name = "Aeon's plane";
+SELECT * FROM airplane
+SELECT * FROM airplane;
+REMOVE TABLE airplane;
+SELECT * FROM airplane;
+UPDATE airplane SET name = "Aeon's plane";
+UPSERT airplane SET name = "Aeon's plane";
+SELECT * FROM airplane;
+UPDATE airplane SET name = "Aeon's plane";
+SELECT * FROM airplane;
+UPSERT airplane \n  SET seats = 20\n  WHERE name = "Aeon's plane";
+SELECT * FROM airplane;
+CREATE resident SET\n    of = "Toria",\n    name = "Aeon";\nCREATE resident SET\n    of = "Toria",\n    name = "Mother of Aeon";

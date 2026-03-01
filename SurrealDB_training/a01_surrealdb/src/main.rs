@@ -20,18 +20,18 @@ async fn main() -> surrealdb::Result<()> {
     let some_queries = db
         .query(
             r#"
-        CREATE person;
-        RETURN 9; 
-        RETURN 10; 
-        SELECT * FROM { is: 'Nice database' };
-        CREATE person:aeon;
-        CREATE town:the_naimo SET
-          name = "The Naimo",
-          population = 7490,
-          data = {
-              location: "Northwest of Toria",
-              geography: "Coastal town",
-          };
+CREATE person;
+RETURN 9; 
+RETURN 10; 
+SELECT * FROM { is: 'Nice database' };
+CREATE person:aeon;
+CREATE town:the_naimo SET
+name = "The Naimo",
+population = 7490,
+data = {
+  location: "Northwest of Toria",
+  geography: "Coastal town"
+};
     "#,
         )
         .await?;
