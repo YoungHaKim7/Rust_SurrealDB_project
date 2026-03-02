@@ -1,10 +1,8 @@
-use serde_json::json;
-use surrealdb::engine::remote::ws::Ws;
-use surrealdb::opt::auth::Root;
+use surrealdb::engine::local::SurrealKv;
 use surrealdb::{Error, Surreal};
 
 // Install at https://surrealdb.com/install
-// and use `surreal start --user root --pass root`
+// and use `surreal start --user root --pass root surrealkv://mydb`
 // to start a working database to take the following queries
 
 // See the results via `surreal sql --ns namespace --db database --pretty`
@@ -13,61 +11,44 @@ use surrealdb::{Error, Surreal};
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
-    let db = Surreal::new::<Ws>("localhost:8000").await?;
+    let db = Surreal::new::<SurrealKv>("mydb").await?;
 
-    // Signin as a namespace, database, or root user
-    db.signin(Root {
-        username: "root".to_string(),
-        password: "root".to_string(),
-    })
-    .await?;
+    // For embedded SurrealKv, authentication is optional
+    // Skip signin for local embedded database
 
     // Select a specific namespace / database
     db.use_ns("namespace").use_db("database").await?;
 
-    // Create a new person with a random ID
-    let _created: Option<serde_json::Value> = db
-        .create("person")
-        .content(json!({
-            "title": "Founder & CEO",
-            "name": {
-                "first": "Tobie",
-                "last": "Morgan Hitchcock"
-            },
-            "marketing": true
-        }))
-        .await?;
+    // Create a new person using SQL query
+    db.query(r#"
+        CREATE person SET
+            title = 'Founder & CEO',
+            first_name = 'Tobie',
+            last_name = 'Morgan Hitchcock',
+            marketing = true
+    "#).await?;
 
-    // Create a new person with a specific ID
-    let _created: Option<serde_json::Value> = db
-        .create(("person", "jaime"))
-        .content(json!({
-            "title": "Founder & COO",
-            "name": {
-                "first": "Jaime",
-                "last": "Morgan Hitchcock"
-            },
-            "marketing": false
-        }))
-        .await?;
+    // Create a new person with a specific ID using SQL
+    db.query(r#"
+        CREATE person:jaime SET
+            title = 'Founder & COO',
+            first_name = 'Jaime',
+            last_name = 'Morgan Hitchcock',
+            marketing = false
+    "#).await?;
 
-    // Update a person record with a specific ID
-    let _updated: Option<serde_json::Value> = db
-        .update(("person", "jaime"))
-        .merge(json!({"marketing": true}))
-        .await?;
+    // Update a person record with a specific ID using SQL
+    db.query(r#"
+        UPDATE person:jaime SET marketing = true
+    "#).await?;
 
-    // Select all people records
-    let _people: Vec<serde_json::Value> = db.select("person").await?;
+    // Select all people records using SQL
+    let _people = db.query("SELECT * FROM person").await?;
 
     // Perform a custom advanced query
-    let query = r#"
-        SELECT marketing, count()
-        FROM type::table($table)
-        GROUP BY marketing
-    "#;
-
-    let _groups = db.query(query).bind(("table", "person")).await?;
+    let _groups = db
+        .query("SELECT * FROM person WHERE marketing = true")
+        .await?;
 
     Ok(())
 }
