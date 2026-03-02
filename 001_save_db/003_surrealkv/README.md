@@ -1,3 +1,8 @@
+# suurealkv실행 안 해 주고 `cargo r --release` 해도 파일 생긴다
+
+- 완전 신기
+
+
 # SuurealDB자체 DB
 
 - https://surrealdb.com/learn/book/chapter-03
