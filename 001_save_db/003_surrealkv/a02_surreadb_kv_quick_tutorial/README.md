@@ -1,7 +1,10 @@
 # Result
 
 ```bash
-Error: Error { code: -32000, message: "Expected any, got record", details: Internal }
+$ cargo r --release
+
+    Finished `release` profile [optimized] target(s) in 0.19s
+     Running `target/release/a02_surreadb_kv_quick_tutorial`
 
 ```
 
