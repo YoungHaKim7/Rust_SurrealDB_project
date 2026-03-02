@@ -2,6 +2,15 @@
 
 - 완전 신기
 
+```bash
+cargo r --release
+```
+
+- 이후 데이터 잘 들어갔는지 확인하면 된다.
+
+```bash
+$ surreal sql --user root --pass root --ns namespace --db database --pretty
+```
 
 # SuurealDB자체 DB
 
