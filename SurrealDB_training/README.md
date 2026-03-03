@@ -1,3 +1,7 @@
+# SurrealDB playground
+
+- https://app.surrealdb.com/c/sandbox/query
+
 # ebook
 - https://surrealdb.com/learn/book/chapter-03#the-as-keyword
 
