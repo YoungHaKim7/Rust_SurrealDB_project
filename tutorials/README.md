@@ -11,6 +11,9 @@
 
 <hr />
 
+# 최근DB는 MapRecude가 필요없어짐...
+- [Date: 15 July 2021 | Author: Ibis Solutions | IBM | Is MapReduce outdated?](https://www.ibis-solutions.rs/en/insights/is-mapreduce-outdated/)
+
 # easy rust의 tutorial
 
 - [SurrealDB의 꿀팁! | mithradates](https://youtube.com/playlist?list=PLfllocyHVgsRS1oQrML6uu59ZQ0s4rVDP&si=3ckEt697OVy-l0Td)
